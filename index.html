@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYT Cars- Used car showroom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="img/205.png" width="100px" alt="logo"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()" ></i>
+
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Cars</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" id="menuBar" onclick="showMenu()"></i>
+
+    </nav>
+    
+<div class="text-box ">
+    <h1 class="animate__animated animate__flip">NYT CARS</h1>
+    <p>The Best Place to Buy and Sell Your used cars.  Best prices, Best Service in town</p>
+    <a href="" class="hero-btn">Start</a>
+</div>
+</section>
+
+<!-----List of Cars available-->
+<section class="carsList">
+    <h1>Cars available</h1>
+    <p>Here is a list of all the cars available</p>
+
+        <div class="row">
+            <div class="cars-col suv">
+                <h3>SUV</h3>
+                <p>We have a wide range of cars available in this domain.</p>
+            </div>
+            <div class="cars-col sedan">
+                <h3>SEDAN</h3>
+                <p>We have a wide range of cars available in this domain.</p>
+            </div>
+            <div class="cars-col hatchback">
+                <h3>HATCH BACK</h3>
+                <p>We have a wide range of cars available in this domain.</p>
+            </div>
+        </div>
+</section>
+<div class="space"></div>
+<!---Office-->
+<section class="office">
+  <h1>Our Offices</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit provident nam possimus, explicabo eius, nisi perspiciatis minima non eligendi praesentium officiis laudantium est temporibus dolor pariatur, ad tempore repudiandae totam?</p>
+
+  <div class="row">
+      <div class="office-col">
+          <img src="img/car_showroom.jpg" alt="car showroom">
+          <div class="layer">
+              <h3>MAIN OFFICE</h3>
+          </div>
+      </div>
+      <div class="office-col">
+        <img src="img/car_mech2.jpg" alt="car showroom">
+        <div class="layer">
+            <h3>GARAGE</h3>
+        </div>
+    </div>
+
+    <div class="office-col">
+        <img src="img/car_mech3.jpg" alt="car showroom">
+        <div class="layer">
+            <h3>MECHANIC</h3>
+        </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-----Javascript for menu toggle--------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    var menuBar=document.getElementById("menuBar");
+    function showMenu() {
+        navLinks.style.right="0";
+          
+    }
+    function hideMenu() {
+        navLinks.style.right="-300px";
+    }
+</script>
+</body>
+</html>
